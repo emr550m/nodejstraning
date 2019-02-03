@@ -1,0 +1,1 @@
+'use strict';var _car=require('./car'),_car2=_interopRequireDefault(_car),_bike=require('./bike'),_bike2=_interopRequireDefault(_bike);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var Toyota=new _car2.default;Toyota.printType(),Toyota.speedUp(),Toyota.printSpeed();var Honda=new _bike2.default;Honda.printType(),Honda.speedUp(),Honda.printSpeed();

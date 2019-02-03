@@ -1,0 +1,42 @@
+<html>
+    <head><title>This is exercise 4</title>
+    <script> 
+        
+        class BaseHuman {
+            constructor(name){
+                this.name = name;
+                this.type = 'HumanBase';
+            }
+            walk(){
+                console.log("Base Walk");
+            }
+        }
+
+        class Saphiens extends BaseHuman
+        {
+            constructor(name){
+                super(name); 
+            }
+            walk(){
+                super.walk();
+                console.log("Saphien Walk");
+            }
+
+        }
+
+        function humanWalker(){
+
+            let human = new Saphiens("Emrah");
+            console.log(human.name);
+
+            human.walk();
+        }
+        
+
+    </script>
+    </head>
+    <body>
+        <h1>This is sample 4.</h1>
+        <button onclick="humanWalker()">Click Me To Say hello</button>
+    </body>
+</html>

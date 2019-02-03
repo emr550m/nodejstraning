@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>This is exercise 2</title>
+    <script>
+
+        var personList = [
+            { id: 1, name: "Emrah", surname: "Öz", age: 35 },
+            { id: 2, name: "Ahmet", surname: "Öz", age: 12 },
+            { id: 3, name: "Ayşe", surname: "Öz", age: 9 },
+            { id: 4, name: "Kerem", surname: "Öz", age: 55 },
+        ];
+
+        function listItems() {
+            for (var i = 0; i < personList.length; i++) {
+                var newRow = document.createElement("div");
+                newRow.id = personList[i].id;
+
+                if (personList[i].age > 50) {
+                    newRow.innerHTML = personList[i].name + " " + personList[i].surname + " (" + personList[i].age + " yuhh.." + ")";
+                } else if (personList[i].age > 30) {
+                    newRow.innerHTML = personList[i].name + " " + personList[i].surname + " (" + personList[i].age + " riskli.." + ")";
+                } else if (personList[i].age > 10) {
+                    newRow.innerHTML = personList[i].name + " " + personList[i].surname + " (" + personList[i].age + " genç.." + ")";
+                } else {
+                    newRow.innerHTML = personList[i].name + " " + personList[i].surname + " (" + personList[i].age + " coook genç.." + ")";
+                }
+                document.getElementById("details").appendChild(newRow);
+            }
+        }
+
+        var myCar = {
+            Brand: 'Fiat',
+            Model: '500L',
+            Year: 2017
+        }
+
+        function displayCar()
+        {
+            document.getElementById("details").innerHTML= "Your car brand: " + myCar.Brand + ", your car model: " + myCar.Model + ", your car model year: " + myCar.Year;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>This is the second exercise.</h1>
+    <button onclick="listItems()">Click Here To List</button>  <button onclick="displayCar()">Display car</button>
+    <div id="details"></div>
+</body>
+
+</html>
