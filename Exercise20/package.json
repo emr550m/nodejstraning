@@ -1,0 +1,22 @@
+{
+  "name": "nodejstraning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emr550m/nodejstraning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emr550m/nodejstraning/issues"
+  },
+  "homepage": "https://github.com/emr550m/nodejstraning#readme",
+  "dependencies": {
+    "mongodb": "^3.1.13"
+  }
+}
