@@ -12,6 +12,12 @@ class OutOfContext {
         setTimeout(function(){
             this.print();
         }, 200);
+
+        /*
+         setTimeout(()=>{
+            this.print();
+        }, 200);
+        */
     }
 
     print() {
