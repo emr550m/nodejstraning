@@ -1,0 +1,26 @@
+{
+  "name": "nodejstraning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emr550m/nodejstraning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emr550m/nodejstraning/issues"
+  },
+  "homepage": "https://github.com/emr550m/nodejstraning#readme",
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.3"
+  },
+  "devDependencies": {
+    "nyc": "^13.3.0"
+  }
+}
