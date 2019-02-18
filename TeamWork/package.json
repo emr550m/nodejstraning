@@ -7,6 +7,9 @@
     "test": "nyc mocha --recursive",
     "start": "node src/index"
   },
+  "nyc": {
+    "exclude": [ "src/app.js" ,"test" ]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
