@@ -1,8 +1,7 @@
 var connectionString = "mongodb://nodejs:nodejs@nodejs-shard-00-00-4apei.mongodb.net:27017,nodejs-shard-00-01-4apei.mongodb.net:27017,nodejs-shard-00-02-4apei.mongodb.net:27017/test?ssl=true&replicaSet=NodeJS-shard-0&authSource=admin&retryWrites=true";
 const MongoClient = require('mongodb').MongoClient;
 const dbName = 'nodejs';
-const client = new MongoClient(connectionString, { useNewUrlParser: true });
-
+var client = new MongoClient(connectionString, { useNewUrlParser: true });
 
 function OpenDB() {
     return new Promise(function (resolve, reject) {
@@ -15,9 +14,7 @@ function OpenDB() {
                 }
             });
         } else {
-            return new Promise(function (resolve, reject) {
-                reject("Already Connected!");
-            });
+            reject("Already Connected!");
         }
     });
 }
@@ -110,6 +107,7 @@ function DeleteDB(table,query)
 }
 
 module.exports = {
+    client,
     OpenDB,
     CloseDB,
     InsertDB,
