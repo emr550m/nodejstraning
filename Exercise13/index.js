@@ -15,9 +15,10 @@ ls.stdout.on('data', (data) => {
   
   ls.on('close', (code) => {
     console.log(`child process exited with code ${code}`);
-  });*/
+  }); */
 
 //fork some child process
+
 
 var childs = [];
   for(var i=1;i<4;i++){
@@ -39,4 +40,6 @@ var childs = [];
     for(var i=1;i<4;i++){
       childs[i].send("KILL")
      }
-   },5000);
+   },5000); 
+
+  
