@@ -10,3 +10,4 @@ module.exports =  class bike extends vehicleBase {
         super.speedUp(30);
     }
 }
+//comment
