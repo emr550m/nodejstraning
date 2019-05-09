@@ -8,7 +8,10 @@
     "start": "node src/index"
   },
   "nyc": {
-    "exclude": [ "src/app.js" ,"test" ]
+    "exclude": [
+      "src/app.js",
+      "test"
+    ]
   },
   "author": "",
   "license": "ISC",
